@@ -43,7 +43,9 @@ function verifyPin() {
   let failError = document.querySelector(".notify-fail");
   if (pin == typedNumbers) {
     successMessage.style.display = "block";
+    failError.style.display = "none";
   } else {
     failError.style.display = "block";
+    successMessage.style.display = "none";
   }
 }
